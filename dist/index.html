@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div id="content">
+        <div class="title">
+          <i class="fa fa-check fa-3x" aria-hidden="true"></i>
+          <h1>Handled</h1>
+        </div>
+        <div class="project-name active">
+          <form class="project-form"> 
+            <h4 class = "form-heading">Add a project</h4>
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" class="input" id="project-name" name="name">
+              <div class="form-btns">
+                <button class="form-btn cancel">Cancel</button>
+                <button class="form-btn add">Add</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="task-details active">
+          <form class="task-form"> 
+            <h4>Add a task</h4>
+            <div class="form-control"></div>
+              <input type="text" class="input" id="task-name" name="name">
+              <label class="time-label" for="start">Due date:</label>
+              <input type="date" id="start" name="task-start"
+              value="2021-06-01"
+              min="2021-06-01" max="">
+              <div class="form-btns">
+                <button class="form-btn cancel" id="cancel-task">Cancel</button>
+                <button class="form-btn add" id="add-task">Add</button>
+              </div>
+            </div>
+           
+          </form>
+        </div>
+        <article class=container>
+          <div class="projects">
+            <h2>Projects</h2>
+            <!-- <div class="project-item" data-id="0" id="today-project">
+              <h4>Today</h4>
+              <i class="fa fa-trash delete-icon" aria-hidden="true"></i>
+            </div> -->
+            <button class="btn add-project">+</button>
+          </div>
+          <div class="tasks">
+            <button class="btn add-task">New Task</button>
+          </div>
+        </article>
+      </div>
+      
+      
+      
+   <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "todo-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "dependencies": {
+    "crypto-browserify": "^3.12.0",
+    "date-fns": "^2.22.1",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "path-browserify": "^1.0.1",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browser":{
+    "child_process": false
+  } 
+}
+
